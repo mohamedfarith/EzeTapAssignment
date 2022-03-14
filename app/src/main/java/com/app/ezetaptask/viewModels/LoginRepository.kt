@@ -1,4 +1,4 @@
-package com.app.ezetaptask.viewModels.loginViewModel
+package com.app.ezetaptask.viewModels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModelProvider
