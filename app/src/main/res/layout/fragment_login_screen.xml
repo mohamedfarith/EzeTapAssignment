@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="uiDetails"
+            type="com.app.network.networkModule.models.LoginUIDetails" />
+
+        <variable
+            name="adapter"
+            type="com.app.ezetaptask.LoginScreenAdapter" />
+    </data>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".LoginScreenFragment">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:gravity="center"
+                android:text="@{uiDetails.headerText}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                bind:imageUrl="@{uiDetails.logoImage}" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:adapter="@{adapter}"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:indeterminateTint="@color/white" />
+    </FrameLayout>
+</layout>

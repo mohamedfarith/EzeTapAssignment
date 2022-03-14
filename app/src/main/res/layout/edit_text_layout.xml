@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="uiData"
+            type="com.app.network.networkModule.models.LoginUIDetails.UIData" />
+
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/input_box"
+            android:hint="@{uiData.hint}"
+            android:imeOptions="actionNext"
+            android:inputType="@{uiData.inputType}"
+            android:padding="15dp"
+            android:saveEnabled="false"
+            android:textColor="@color/white"
+            android:textColorHint="#83FFFFFF" />
+
+    </LinearLayout>
+</layout>
