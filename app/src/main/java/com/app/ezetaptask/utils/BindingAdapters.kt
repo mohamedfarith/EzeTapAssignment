@@ -1,4 +1,4 @@
-package com.app.ezetaptask
+package com.app.ezetaptask.utils
 
 import android.content.Context
 import android.widget.ImageView

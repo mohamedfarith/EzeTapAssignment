@@ -1,4 +1,4 @@
-package com.app.ezetaptask
+package com.app.ezetaptask.ui
 
 import android.os.Bundle
 import android.text.TextUtils
@@ -10,7 +10,12 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import com.app.ezetaptask.*
 import com.app.ezetaptask.databinding.FragmentLoginScreenBinding
+import com.app.ezetaptask.genericInterfaces.GenericCallback
+import com.app.ezetaptask.viewModels.loginViewModel.LoginRepository
+import com.app.ezetaptask.ui.adapters.LoginScreenAdapter
+import com.app.ezetaptask.utils.LocalUtils
 import com.app.network.networkModule.models.LoginUIDetails
 import com.app.network.networkModule.models.NetworkResult
 

@@ -1,8 +1,9 @@
-package com.app.ezetaptask
+package com.app.ezetaptask.utils
 
 import android.content.Context
 import android.net.ConnectivityManager
 import androidx.appcompat.app.AlertDialog
+import com.app.ezetaptask.genericInterfaces.GenericCallback
 
 object LocalUtils {
     fun isOnline(context: Context?): Boolean {

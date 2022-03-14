@@ -1,10 +1,12 @@
-package com.app.ezetaptask
+package com.app.ezetaptask.ui.adapters
 
 import android.text.Editable
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.app.ezetaptask.utils.CustomTextWatcher
+import com.app.ezetaptask.R
 import com.app.ezetaptask.databinding.ButtonLayoutBinding
 import com.app.ezetaptask.databinding.DisplayTextLayoutBinding
 import com.app.ezetaptask.databinding.EditTextLayoutBinding
@@ -13,7 +15,7 @@ import com.app.network.networkModule.models.LoginUIDetails
 
 class LoginScreenAdapter(
     var data: ArrayList<LoginUIDetails.UIData>,
-    var listener: LoginScreenAdapter.LoginScreenInterface
+    var listener: LoginScreenInterface
 ) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val EDIT_VIEW_TYPE = 123;

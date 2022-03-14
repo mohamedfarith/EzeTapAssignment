@@ -1,4 +1,4 @@
-package com.app.ezetaptask
+package com.app.ezetaptask.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import com.app.ezetaptask.ui.adapters.LoginScreenAdapter
+import com.app.ezetaptask.R
 import com.app.ezetaptask.databinding.FragmentDetailScreenBinding
 import com.app.network.networkModule.models.LoginUIDetails
 

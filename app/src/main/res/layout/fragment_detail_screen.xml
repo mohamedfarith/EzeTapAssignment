@@ -5,7 +5,7 @@
 
         <variable
             name="adapter"
-            type="com.app.ezetaptask.LoginScreenAdapter" />
+            type="com.app.ezetaptask.ui.adapters.LoginScreenAdapter" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

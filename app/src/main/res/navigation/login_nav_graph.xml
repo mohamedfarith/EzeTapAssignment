@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/loginScreenFragment"
-        android:name="com.app.ezetaptask.LoginScreenFragment"
+        android:name="com.app.ezetaptask.ui.LoginScreenFragment"
         android:label="LoginScreenFragment">
         <action
             android:id="@+id/action_loginScreenFragment_to_loginDetailFragment"
@@ -16,6 +16,6 @@
     </fragment>
     <fragment
         android:id="@+id/loginDetailFragment"
-        android:name="com.app.ezetaptask.LoginDetailFragment"
+        android:name="com.app.ezetaptask.ui.LoginDetailFragment"
         android:label="LoginDetailFragment" />
 </navigation>

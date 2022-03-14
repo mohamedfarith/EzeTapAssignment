@@ -1,4 +1,4 @@
-package com.app.ezetaptask
+package com.app.ezetaptask.utils
 
 import android.text.Editable
 import android.text.TextWatcher
